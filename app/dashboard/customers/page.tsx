@@ -2,6 +2,11 @@ import Table from '@/app/ui/customers/table';
 import { CustomerSkeleton } from '@/app/ui/skeletons';
 import { Suspense } from 'react';
 import { fetchFilteredCustomers } from '@/app/lib/data';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Customer',
+};
 
 export default async function Page({
   searchParams,
